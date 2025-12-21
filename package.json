@@ -1,0 +1,25 @@
+{
+  "name": "railway-booking-chatbot",
+  "version": "1.0.0",
+  "description": "Railway booking chatbot with React and Node.js",
+  "main": "server/index.js",
+  "scripts": {
+    "server": "PORT=5001 node server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": ["chatbot", "railway", "booking", "react", "node"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
